@@ -1,0 +1,80 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    display: grid;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; 
+    grid-template-columns: 2fr 1fr;
+    gap: 20px; 
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    color: white;
+}
+
+.head-container {
+    grid-column: 1 / span 2; 
+    background-color: #f4a98a;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-container {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+    background-color: #f4a98a;
+    padding: 10px;
+}
+
+.nav-item {
+    background-color: white;
+    color: #f4a98a;
+    text-align: center;
+    padding: 10px;
+}
+
+.article {
+    grid-column: 1; 
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px;
+    background-color: #45b5f9;
+    padding: 20px;
+}
+
+.article-item {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.aside {
+    grid-column: 2; 
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px;
+    background-color: #adc1d6;
+    padding: 20px;
+}
+
+.aside-item {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-container {
+    grid-column: 1 / span 2; 
+    background-color: #f4a98a;
+    text-align: center;
+    padding: 20px;
+}
